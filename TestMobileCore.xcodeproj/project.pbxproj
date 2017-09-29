@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40064E5B1F0E2E9E009CA159 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40064E5A1F0E2E9E009CA159 /* main.m */; };
+		40064E5E1F0E2E9E009CA159 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40064E5D1F0E2E9E009CA159 /* AppDelegate.m */; };
+		40064E611F0E2E9E009CA159 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40064E601F0E2E9E009CA159 /* ViewController.m */; };
+		40064E641F0E2E9E009CA159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40064E621F0E2E9E009CA159 /* Main.storyboard */; };
+		40064E661F0E2E9E009CA159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40064E651F0E2E9E009CA159 /* Assets.xcassets */; };
+		40064E691F0E2E9E009CA159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40064E671F0E2E9E009CA159 /* LaunchScreen.storyboard */; };
+		40064F001F0E360F009CA159 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40064EFF1F0E360F009CA159 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40064E561F0E2E9E009CA159 /* TestMobileCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMobileCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40064E5A1F0E2E9E009CA159 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40064E5C1F0E2E9E009CA159 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40064E5D1F0E2E9E009CA159 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40064E5F1F0E2E9E009CA159 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		40064E601F0E2E9E009CA159 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		40064E631F0E2E9E009CA159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40064E651F0E2E9E009CA159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40064E681F0E2E9E009CA159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40064E6A1F0E2E9E009CA159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40064E721F0E2EF1009CA159 /* _CSStoreXPCRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CSStoreXPCRepresentation.h; sourceTree = "<group>"; };
+		40064E731F0E2EF1009CA159 /* _LSAllURLSchemesQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSAllURLSchemesQuery.h; sourceTree = "<group>"; };
+		40064E741F0E2EF1009CA159 /* _LSApplicationIsInstalledQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSApplicationIsInstalledQuery.h; sourceTree = "<group>"; };
+		40064E751F0E2EF1009CA159 /* _LSApplicationProxiesOfTypeQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSApplicationProxiesOfTypeQuery.h; sourceTree = "<group>"; };
+		40064E761F0E2EF1009CA159 /* _LSApplicationProxiesWithFlagsQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSApplicationProxiesWithFlagsQuery.h; sourceTree = "<group>"; };
+		40064E771F0E2EF1009CA159 /* _LSApplicationProxyForUserActivityQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSApplicationProxyForUserActivityQuery.h; sourceTree = "<group>"; };
+		40064E781F0E2EF1009CA159 /* _LSApplicationsForSiriQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSApplicationsForSiriQuery.h; sourceTree = "<group>"; };
+		40064E791F0E2EF1009CA159 /* _LSApplicationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSApplicationState.h; sourceTree = "<group>"; };
+		40064E7A1F0E2EF1009CA159 /* _LSAppLinkOpenState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSAppLinkOpenState.h; sourceTree = "<group>"; };
+		40064E7B1F0E2EF1009CA159 /* _LSAppLinkPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSAppLinkPattern.h; sourceTree = "<group>"; };
+		40064E7C1F0E2EF1009CA159 /* _LSAppLinkPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSAppLinkPlugIn.h; sourceTree = "<group>"; };
+		40064E7D1F0E2EF1009CA159 /* _LSAvailableApplicationsForURLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSAvailableApplicationsForURLQuery.h; sourceTree = "<group>"; };
+		40064E7E1F0E2EF1009CA159 /* _LSBundleProxiesOfTypeQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSBundleProxiesOfTypeQuery.h; sourceTree = "<group>"; };
+		40064E7F1F0E2EF1009CA159 /* _LSCanOpenURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSCanOpenURLManager.h; sourceTree = "<group>"; };
+		40064E801F0E2EF1009CA159 /* _LSCompoundLazyPropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSCompoundLazyPropertyList.h; sourceTree = "<group>"; };
+		40064E811F0E2EF1009CA159 /* _LSConcreteLazyPropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSConcreteLazyPropertyList.h; sourceTree = "<group>"; };
+		40064E821F0E2EF1009CA159 /* _LSCurrentBundleProxyQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSCurrentBundleProxyQuery.h; sourceTree = "<group>"; };
+		40064E831F0E2EF1009CA159 /* _LSDClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDClient.h; sourceTree = "<group>"; };
+		40064E841F0E2EF1009CA159 /* _LSDDeviceIdentifierClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDDeviceIdentifierClient.h; sourceTree = "<group>"; };
+		40064E851F0E2EF1009CA159 /* _LSDDeviceIdentifierProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_LSDDeviceIdentifierProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064E861F0E2EF1009CA159 /* _LSDDeviceIdentifierService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDDeviceIdentifierService.h; sourceTree = "<group>"; };
+		40064E871F0E2EF1009CA159 /* _LSDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDefaults.h; sourceTree = "<group>"; };
+		40064E881F0E2EF1009CA159 /* _LSDeviceIdentifierCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDeviceIdentifierCache.h; sourceTree = "<group>"; };
+		40064E891F0E2EF1009CA159 /* _LSDiskUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDiskUsage.h; sourceTree = "<group>"; };
+		40064E8A1F0E2EF1009CA159 /* _LSDispatchWithTimeoutResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDispatchWithTimeoutResult.h; sourceTree = "<group>"; };
+		40064E8B1F0E2EF1009CA159 /* _LSDModifyClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDModifyClient.h; sourceTree = "<group>"; };
+		40064E8C1F0E2EF1009CA159 /* _LSDModifyProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_LSDModifyProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064E8D1F0E2EF1009CA159 /* _LSDModifyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDModifyService.h; sourceTree = "<group>"; };
+		40064E8E1F0E2EF1009CA159 /* _LSDocumentProxyBindingQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDocumentProxyBindingQuery.h; sourceTree = "<group>"; };
+		40064E8F1F0E2EF1009CA159 /* _LSDOpenClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDOpenClient.h; sourceTree = "<group>"; };
+		40064E901F0E2EF1009CA159 /* _LSDOpenProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_LSDOpenProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064E911F0E2EF1009CA159 /* _LSDOpenService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDOpenService.h; sourceTree = "<group>"; };
+		40064E921F0E2EF1009CA159 /* _LSDReadClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDReadClient.h; sourceTree = "<group>"; };
+		40064E931F0E2EF1009CA159 /* _LSDReadProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_LSDReadProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064E941F0E2EF1009CA159 /* _LSDReadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDReadService.h; sourceTree = "<group>"; };
+		40064E951F0E2EF1009CA159 /* _LSDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSDService.h; sourceTree = "<group>"; };
+		40064E961F0E2EF1009CA159 /* _LSFeldsparAppLinkPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSFeldsparAppLinkPlugIn.h; sourceTree = "<group>"; };
+		40064E971F0E2EF1009CA159 /* _LSHandoffCompatibilityAppLinkPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSHandoffCompatibilityAppLinkPlugIn.h; sourceTree = "<group>"; };
+		40064E981F0E2EF1009CA159 /* _LSHardCodedAppLinkPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSHardCodedAppLinkPlugIn.h; sourceTree = "<group>"; };
+		40064E991F0E2EF1009CA159 /* _LSIconCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSIconCache.h; sourceTree = "<group>"; };
+		40064E9A1F0E2EF1009CA159 /* _LSIconCacheClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSIconCacheClient.h; sourceTree = "<group>"; };
+		40064E9B1F0E2EF1009CA159 /* _LSIconCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSIconCacheService.h; sourceTree = "<group>"; };
+		40064E9C1F0E2EF1009CA159 /* _LSInstallationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSInstallationManager.h; sourceTree = "<group>"; };
+		40064E9D1F0E2EF1009CA159 /* _LSInstallationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSInstallationService.h; sourceTree = "<group>"; };
+		40064E9E1F0E2EF1009CA159 /* _LSInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSInstaller.h; sourceTree = "<group>"; };
+		40064E9F1F0E2EF1009CA159 /* _LSInstallerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSInstallerClient.h; sourceTree = "<group>"; };
+		40064EA01F0E2EF1009CA159 /* _LSLazyPlugInPropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSLazyPlugInPropertyList.h; sourceTree = "<group>"; };
+		40064EA11F0E2EF1009CA159 /* _LSLazyPropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSLazyPropertyList.h; sourceTree = "<group>"; };
+		40064EA21F0E2EF1009CA159 /* _LSLocalContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSLocalContext.h; sourceTree = "<group>"; };
+		40064EA31F0E2EF1009CA159 /* _LSOpenCopierContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSOpenCopierContext.h; sourceTree = "<group>"; };
+		40064EA41F0E2EF1009CA159 /* _LSOpenResourceOperationDelegateWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSOpenResourceOperationDelegateWrapper.h; sourceTree = "<group>"; };
+		40064EA51F0E2EF1009CA159 /* _LSQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSQuery.h; sourceTree = "<group>"; };
+		40064EA61F0E2EF1009CA159 /* _LSQueryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSQueryCache.h; sourceTree = "<group>"; };
+		40064EA71F0E2EF1009CA159 /* _LSQueryContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSQueryContext.h; sourceTree = "<group>"; };
+		40064EA81F0E2EF1009CA159 /* _LSQueryResolving-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_LSQueryResolving-Protocol.h"; sourceTree = "<group>"; };
+		40064EA91F0E2EF1009CA159 /* _LSQueryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSQueryResult.h; sourceTree = "<group>"; };
+		40064EAA1F0E2EF1009CA159 /* _LSQueryResultWithPropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSQueryResultWithPropertyList.h; sourceTree = "<group>"; };
+		40064EAB1F0E2EF1009CA159 /* _LSSharedWebCredentialsAppLinkPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSSharedWebCredentialsAppLinkPlugIn.h; sourceTree = "<group>"; };
+		40064EAC1F0E2EF1009CA159 /* _LSSharedWebCredentialsConcreteAppLinkPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSSharedWebCredentialsConcreteAppLinkPlugIn.h; sourceTree = "<group>"; };
+		40064EAD1F0E2EF1009CA159 /* _LSSpringBoardCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSSpringBoardCall.h; sourceTree = "<group>"; };
+		40064EAE1F0E2EF1009CA159 /* _LSStringLocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSStringLocalizer.h; sourceTree = "<group>"; };
+		40064EAF1F0E2EF1009CA159 /* _LSXPCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSXPCContext.h; sourceTree = "<group>"; };
+		40064EB01F0E2EF1009CA159 /* _UTConcreteType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTConcreteType.h; sourceTree = "<group>"; };
+		40064EB11F0E2EF1009CA159 /* _UTDeclaredType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTDeclaredType.h; sourceTree = "<group>"; };
+		40064EB21F0E2EF1009CA159 /* _UTDeclaredTypeSortableWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTDeclaredTypeSortableWrapper.h; sourceTree = "<group>"; };
+		40064EB31F0E2EF1009CA159 /* _UTDynamicType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTDynamicType.h; sourceTree = "<group>"; };
+		40064EB41F0E2EF1009CA159 /* _UTType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTType.h; sourceTree = "<group>"; };
+		40064EB51F0E2EF1009CA159 /* _UTTypeQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTTypeQuery.h; sourceTree = "<group>"; };
+		40064EB61F0E2EF1009CA159 /* _UTTypeQueryForAllIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTTypeQueryForAllIdentifiers.h; sourceTree = "<group>"; };
+		40064EB71F0E2EF1009CA159 /* _UTTypeQueryWithIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTTypeQueryWithIdentifier.h; sourceTree = "<group>"; };
+		40064EB81F0E2EF1009CA159 /* _UTTypeQueryWithParentIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTTypeQueryWithParentIdentifier.h; sourceTree = "<group>"; };
+		40064EB91F0E2EF1009CA159 /* _UTTypeQueryWithTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UTTypeQueryWithTags.h; sourceTree = "<group>"; };
+		40064EBA1F0E2EF1009CA159 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		40064EBB1F0E2EF1009CA159 /* LSApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
+		40064EBC1F0E2EF1009CA159 /* LSApplicationRestrictionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationRestrictionsManager.h; sourceTree = "<group>"; };
+		40064EBD1F0E2EF1009CA159 /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
+		40064EBE1F0E2EF1009CA159 /* LSApplicationWorkspaceObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspaceObserver.h; sourceTree = "<group>"; };
+		40064EBF1F0E2EF1009CA159 /* LSApplicationWorkspaceObserverProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSApplicationWorkspaceObserverProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064EC01F0E2EF1009CA159 /* LSApplicationWorkspaceRemoteObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspaceRemoteObserver.h; sourceTree = "<group>"; };
+		40064EC11F0E2EF1009CA159 /* LSAppLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAppLink.h; sourceTree = "<group>"; };
+		40064EC21F0E2EF1009CA159 /* LSAppRemovalServiceProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSAppRemovalServiceProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064EC31F0E2EF1009CA159 /* LSBestAppSuggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBestAppSuggestion.h; sourceTree = "<group>"; };
+		40064EC41F0E2EF1009CA159 /* LSBestAppSuggestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBestAppSuggestionManager.h; sourceTree = "<group>"; };
+		40064EC51F0E2EF1009CA159 /* LSBestAppSuggestionManagerProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSBestAppSuggestionManagerProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064EC61F0E2EF1009CA159 /* LSBestAppSuggestionManagerResponseProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSBestAppSuggestionManagerResponseProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064EC71F0E2EF1009CA159 /* LSBundleInfoCachedValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBundleInfoCachedValues.h; sourceTree = "<group>"; };
+		40064EC81F0E2EF1009CA159 /* LSBundleProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBundleProxy.h; sourceTree = "<group>"; };
+		40064EC91F0E2EF1009CA159 /* LSBundleRecordUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBundleRecordUpdater.h; sourceTree = "<group>"; };
+		40064ECA1F0E2EF1009CA159 /* LSDatabaseBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDatabaseBuilder.h; sourceTree = "<group>"; };
+		40064ECB1F0E2EF1009CA159 /* LSDocumentProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDocumentProxy.h; sourceTree = "<group>"; };
+		40064ECC1F0E2EF1009CA159 /* LSIconCacheServiceProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSIconCacheServiceProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064ECD1F0E2EF1009CA159 /* LSInstallationServiceCallbackProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSInstallationServiceCallbackProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064ECE1F0E2EF1009CA159 /* LSInstallationServiceProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSInstallationServiceProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064ECF1F0E2EF1009CA159 /* LSInstallProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSInstallProgressDelegate.h; sourceTree = "<group>"; };
+		40064ED01F0E2EF1009CA159 /* LSInstallProgressList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSInstallProgressList.h; sourceTree = "<group>"; };
+		40064ED11F0E2EF1009CA159 /* LSInstallProgressProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSInstallProgressProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064ED21F0E2EF1009CA159 /* LSInternalWorkspaceObserverProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSInternalWorkspaceObserverProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064ED31F0E2EF1009CA159 /* LSObserverTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSObserverTimer.h; sourceTree = "<group>"; };
+		40064ED41F0E2EF1009CA159 /* LSOpenResourceOperationDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSOpenResourceOperationDelegate-Protocol.h"; sourceTree = "<group>"; };
+		40064ED51F0E2EF1009CA159 /* LSPingResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPingResults.h; sourceTree = "<group>"; };
+		40064ED61F0E2EF1009CA159 /* LSPlugInKitProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPlugInKitProxy.h; sourceTree = "<group>"; };
+		40064ED71F0E2EF1009CA159 /* LSPlugInQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPlugInQuery.h; sourceTree = "<group>"; };
+		40064ED81F0E2EF1009CA159 /* LSPlugInQueryWithIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPlugInQueryWithIdentifier.h; sourceTree = "<group>"; };
+		40064ED91F0E2EF1009CA159 /* LSPlugInQueryWithQueryDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPlugInQueryWithQueryDictionary.h; sourceTree = "<group>"; };
+		40064EDA1F0E2EF1009CA159 /* LSPlugInQueryWithURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPlugInQueryWithURL.h; sourceTree = "<group>"; };
+		40064EDB1F0E2EF1009CA159 /* LSRegistrationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSRegistrationInfo.h; sourceTree = "<group>"; };
+		40064EDC1F0E2EF1009CA159 /* LSResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSResourceProxy.h; sourceTree = "<group>"; };
+		40064EDD1F0E2EF1009CA159 /* LSResumableActivitiesAdministrativeProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSResumableActivitiesAdministrativeProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064EDE1F0E2EF1009CA159 /* LSResumableActivitiesControlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSResumableActivitiesControlManager.h; sourceTree = "<group>"; };
+		40064EDF1F0E2EF1009CA159 /* LSUserActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUserActivity.h; sourceTree = "<group>"; };
+		40064EE01F0E2EF1009CA159 /* LSUserActivityClientProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSUserActivityClientProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064EE11F0E2EF1009CA159 /* LSUserActivityClientResponseProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSUserActivityClientResponseProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064EE21F0E2EF1009CA159 /* LSUserActivityDebuggingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUserActivityDebuggingManager.h; sourceTree = "<group>"; };
+		40064EE31F0E2EF1009CA159 /* LSUserActivityInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUserActivityInfo.h; sourceTree = "<group>"; };
+		40064EE41F0E2EF1009CA159 /* LSUserActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUserActivityManager.h; sourceTree = "<group>"; };
+		40064EE51F0E2EF1009CA159 /* LSVPNPluginProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSVPNPluginProxy.h; sourceTree = "<group>"; };
+		40064EE61F0E2EF1009CA159 /* NSArray-LSObserverAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-LSObserverAdditions.h"; sourceTree = "<group>"; };
+		40064EE71F0E2EF1009CA159 /* NSCoder-LaunchServicesAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder-LaunchServicesAdditions.h"; sourceTree = "<group>"; };
+		40064EE81F0E2EF1009CA159 /* NSCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoding-Protocol.h"; sourceTree = "<group>"; };
+		40064EE91F0E2EF1009CA159 /* NSCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCopying-Protocol.h"; sourceTree = "<group>"; };
+		40064EEA1F0E2EF1009CA159 /* NSDictionary-LSBundleRecordUpatorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-LSBundleRecordUpatorAdditions.h"; sourceTree = "<group>"; };
+		40064EEB1F0E2EF1009CA159 /* NSDictionary-LSCachedValuesAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-LSCachedValuesAdditions.h"; sourceTree = "<group>"; };
+		40064EEC1F0E2EF1009CA159 /* NSDictionary-LSNormalizePluginDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-LSNormalizePluginDictionary.h"; sourceTree = "<group>"; };
+		40064EED1F0E2EF1009CA159 /* NSDictionary-LSPluginQueryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-LSPluginQueryAdditions.h"; sourceTree = "<group>"; };
+		40064EEE1F0E2EF1009CA159 /* NSDictionary-LSPluginSDKResolutionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-LSPluginSDKResolutionAdditions.h"; sourceTree = "<group>"; };
+		40064EEF1F0E2EF1009CA159 /* NSMutableCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableCopying-Protocol.h"; sourceTree = "<group>"; };
+		40064EF01F0E2EF1009CA159 /* NSObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Protocol.h"; sourceTree = "<group>"; };
+		40064EF11F0E2EF1009CA159 /* NSProgress-LSInstallProgressAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProgress-LSInstallProgressAdditions.h"; sourceTree = "<group>"; };
+		40064EF21F0E2EF1009CA159 /* NSSecureCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSecureCoding-Protocol.h"; sourceTree = "<group>"; };
+		40064EF31F0E2EF1009CA159 /* NSString-LSPluginQueryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-LSPluginQueryAdditions.h"; sourceTree = "<group>"; };
+		40064EF41F0E2EF1009CA159 /* NSURL-LSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL-LSAdditions.h"; sourceTree = "<group>"; };
+		40064EF51F0E2EF1009CA159 /* NSURL-LSPreferredLocalizations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL-LSPreferredLocalizations.h"; sourceTree = "<group>"; };
+		40064EF61F0E2EF1009CA159 /* NSUUID-LaunchServicesAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUUID-LaunchServicesAdditions.h"; sourceTree = "<group>"; };
+		40064EF71F0E2EF1009CA159 /* NSXPCConnection-LSXPCServiceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXPCConnection-LSXPCServiceAdditions.h"; sourceTree = "<group>"; };
+		40064EF81F0E2EF1009CA159 /* NSXPCConnectionDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXPCConnectionDelegate-Protocol.h"; sourceTree = "<group>"; };
+		40064EF91F0E2EF1009CA159 /* NSXPCInterface-IconCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXPCInterface-IconCache.h"; sourceTree = "<group>"; };
+		40064EFA1F0E2EF1009CA159 /* NSXPCListenerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXPCListenerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		40064EFB1F0E2EF1009CA159 /* ODRLaunchServicesProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ODRLaunchServicesProtocol-Protocol.h"; sourceTree = "<group>"; };
+		40064EFC1F0E2EF1009CA159 /* SFCompanionAdvertiserDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFCompanionAdvertiserDelegate-Protocol.h"; sourceTree = "<group>"; };
+		40064EFD1F0E30F5009CA159 /* Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fix.h; sourceTree = "<group>"; };
+		40064EFF1F0E360F009CA159 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40064E531F0E2E9E009CA159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40064F001F0E360F009CA159 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40064E4D1F0E2E9E009CA159 = {
+			isa = PBXGroup;
+			children = (
+				40064E701F0E2EA3009CA159 /* PrivateHeaders */,
+				40064E581F0E2E9E009CA159 /* TestMobileCore */,
+				40064E571F0E2E9E009CA159 /* Products */,
+				40064EFE1F0E360F009CA159 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40064E571F0E2E9E009CA159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40064E561F0E2E9E009CA159 /* TestMobileCore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40064E581F0E2E9E009CA159 /* TestMobileCore */ = {
+			isa = PBXGroup;
+			children = (
+				40064E5C1F0E2E9E009CA159 /* AppDelegate.h */,
+				40064E5D1F0E2E9E009CA159 /* AppDelegate.m */,
+				40064E5F1F0E2E9E009CA159 /* ViewController.h */,
+				40064E601F0E2E9E009CA159 /* ViewController.m */,
+				40064E621F0E2E9E009CA159 /* Main.storyboard */,
+				40064E651F0E2E9E009CA159 /* Assets.xcassets */,
+				40064E671F0E2E9E009CA159 /* LaunchScreen.storyboard */,
+				40064E6A1F0E2E9E009CA159 /* Info.plist */,
+				40064E591F0E2E9E009CA159 /* Supporting Files */,
+			);
+			path = TestMobileCore;
+			sourceTree = "<group>";
+		};
+		40064E591F0E2E9E009CA159 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40064E5A1F0E2E9E009CA159 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40064E701F0E2EA3009CA159 /* PrivateHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				40064E711F0E2EB4009CA159 /* MobileCoreServices */,
+			);
+			path = PrivateHeaders;
+			sourceTree = "<group>";
+		};
+		40064E711F0E2EB4009CA159 /* MobileCoreServices */ = {
+			isa = PBXGroup;
+			children = (
+				40064E721F0E2EF1009CA159 /* _CSStoreXPCRepresentation.h */,
+				40064E731F0E2EF1009CA159 /* _LSAllURLSchemesQuery.h */,
+				40064E741F0E2EF1009CA159 /* _LSApplicationIsInstalledQuery.h */,
+				40064E751F0E2EF1009CA159 /* _LSApplicationProxiesOfTypeQuery.h */,
+				40064E761F0E2EF1009CA159 /* _LSApplicationProxiesWithFlagsQuery.h */,
+				40064E771F0E2EF1009CA159 /* _LSApplicationProxyForUserActivityQuery.h */,
+				40064E781F0E2EF1009CA159 /* _LSApplicationsForSiriQuery.h */,
+				40064E791F0E2EF1009CA159 /* _LSApplicationState.h */,
+				40064E7A1F0E2EF1009CA159 /* _LSAppLinkOpenState.h */,
+				40064E7B1F0E2EF1009CA159 /* _LSAppLinkPattern.h */,
+				40064E7C1F0E2EF1009CA159 /* _LSAppLinkPlugIn.h */,
+				40064E7D1F0E2EF1009CA159 /* _LSAvailableApplicationsForURLQuery.h */,
+				40064E7E1F0E2EF1009CA159 /* _LSBundleProxiesOfTypeQuery.h */,
+				40064E7F1F0E2EF1009CA159 /* _LSCanOpenURLManager.h */,
+				40064E801F0E2EF1009CA159 /* _LSCompoundLazyPropertyList.h */,
+				40064E811F0E2EF1009CA159 /* _LSConcreteLazyPropertyList.h */,
+				40064E821F0E2EF1009CA159 /* _LSCurrentBundleProxyQuery.h */,
+				40064E831F0E2EF1009CA159 /* _LSDClient.h */,
+				40064E841F0E2EF1009CA159 /* _LSDDeviceIdentifierClient.h */,
+				40064E851F0E2EF1009CA159 /* _LSDDeviceIdentifierProtocol-Protocol.h */,
+				40064E861F0E2EF1009CA159 /* _LSDDeviceIdentifierService.h */,
+				40064E871F0E2EF1009CA159 /* _LSDefaults.h */,
+				40064E881F0E2EF1009CA159 /* _LSDeviceIdentifierCache.h */,
+				40064E891F0E2EF1009CA159 /* _LSDiskUsage.h */,
+				40064E8A1F0E2EF1009CA159 /* _LSDispatchWithTimeoutResult.h */,
+				40064E8B1F0E2EF1009CA159 /* _LSDModifyClient.h */,
+				40064E8C1F0E2EF1009CA159 /* _LSDModifyProtocol-Protocol.h */,
+				40064E8D1F0E2EF1009CA159 /* _LSDModifyService.h */,
+				40064E8E1F0E2EF1009CA159 /* _LSDocumentProxyBindingQuery.h */,
+				40064E8F1F0E2EF1009CA159 /* _LSDOpenClient.h */,
+				40064E901F0E2EF1009CA159 /* _LSDOpenProtocol-Protocol.h */,
+				40064E911F0E2EF1009CA159 /* _LSDOpenService.h */,
+				40064E921F0E2EF1009CA159 /* _LSDReadClient.h */,
+				40064E931F0E2EF1009CA159 /* _LSDReadProtocol-Protocol.h */,
+				40064E941F0E2EF1009CA159 /* _LSDReadService.h */,
+				40064E951F0E2EF1009CA159 /* _LSDService.h */,
+				40064E961F0E2EF1009CA159 /* _LSFeldsparAppLinkPlugIn.h */,
+				40064E971F0E2EF1009CA159 /* _LSHandoffCompatibilityAppLinkPlugIn.h */,
+				40064E981F0E2EF1009CA159 /* _LSHardCodedAppLinkPlugIn.h */,
+				40064E991F0E2EF1009CA159 /* _LSIconCache.h */,
+				40064E9A1F0E2EF1009CA159 /* _LSIconCacheClient.h */,
+				40064E9B1F0E2EF1009CA159 /* _LSIconCacheService.h */,
+				40064E9C1F0E2EF1009CA159 /* _LSInstallationManager.h */,
+				40064E9D1F0E2EF1009CA159 /* _LSInstallationService.h */,
+				40064E9E1F0E2EF1009CA159 /* _LSInstaller.h */,
+				40064E9F1F0E2EF1009CA159 /* _LSInstallerClient.h */,
+				40064EA01F0E2EF1009CA159 /* _LSLazyPlugInPropertyList.h */,
+				40064EA11F0E2EF1009CA159 /* _LSLazyPropertyList.h */,
+				40064EA21F0E2EF1009CA159 /* _LSLocalContext.h */,
+				40064EA31F0E2EF1009CA159 /* _LSOpenCopierContext.h */,
+				40064EA41F0E2EF1009CA159 /* _LSOpenResourceOperationDelegateWrapper.h */,
+				40064EA51F0E2EF1009CA159 /* _LSQuery.h */,
+				40064EA61F0E2EF1009CA159 /* _LSQueryCache.h */,
+				40064EA71F0E2EF1009CA159 /* _LSQueryContext.h */,
+				40064EA81F0E2EF1009CA159 /* _LSQueryResolving-Protocol.h */,
+				40064EA91F0E2EF1009CA159 /* _LSQueryResult.h */,
+				40064EAA1F0E2EF1009CA159 /* _LSQueryResultWithPropertyList.h */,
+				40064EAB1F0E2EF1009CA159 /* _LSSharedWebCredentialsAppLinkPlugIn.h */,
+				40064EAC1F0E2EF1009CA159 /* _LSSharedWebCredentialsConcreteAppLinkPlugIn.h */,
+				40064EAD1F0E2EF1009CA159 /* _LSSpringBoardCall.h */,
+				40064EAE1F0E2EF1009CA159 /* _LSStringLocalizer.h */,
+				40064EAF1F0E2EF1009CA159 /* _LSXPCContext.h */,
+				40064EB01F0E2EF1009CA159 /* _UTConcreteType.h */,
+				40064EB11F0E2EF1009CA159 /* _UTDeclaredType.h */,
+				40064EB21F0E2EF1009CA159 /* _UTDeclaredTypeSortableWrapper.h */,
+				40064EB31F0E2EF1009CA159 /* _UTDynamicType.h */,
+				40064EB41F0E2EF1009CA159 /* _UTType.h */,
+				40064EB51F0E2EF1009CA159 /* _UTTypeQuery.h */,
+				40064EB61F0E2EF1009CA159 /* _UTTypeQueryForAllIdentifiers.h */,
+				40064EB71F0E2EF1009CA159 /* _UTTypeQueryWithIdentifier.h */,
+				40064EB81F0E2EF1009CA159 /* _UTTypeQueryWithParentIdentifier.h */,
+				40064EB91F0E2EF1009CA159 /* _UTTypeQueryWithTags.h */,
+				40064EBA1F0E2EF1009CA159 /* CDStructures.h */,
+				40064EBB1F0E2EF1009CA159 /* LSApplicationProxy.h */,
+				40064EBC1F0E2EF1009CA159 /* LSApplicationRestrictionsManager.h */,
+				40064EBD1F0E2EF1009CA159 /* LSApplicationWorkspace.h */,
+				40064EBE1F0E2EF1009CA159 /* LSApplicationWorkspaceObserver.h */,
+				40064EBF1F0E2EF1009CA159 /* LSApplicationWorkspaceObserverProtocol-Protocol.h */,
+				40064EC01F0E2EF1009CA159 /* LSApplicationWorkspaceRemoteObserver.h */,
+				40064EC11F0E2EF1009CA159 /* LSAppLink.h */,
+				40064EC21F0E2EF1009CA159 /* LSAppRemovalServiceProtocol-Protocol.h */,
+				40064EC31F0E2EF1009CA159 /* LSBestAppSuggestion.h */,
+				40064EC41F0E2EF1009CA159 /* LSBestAppSuggestionManager.h */,
+				40064EC51F0E2EF1009CA159 /* LSBestAppSuggestionManagerProtocol-Protocol.h */,
+				40064EC61F0E2EF1009CA159 /* LSBestAppSuggestionManagerResponseProtocol-Protocol.h */,
+				40064EC71F0E2EF1009CA159 /* LSBundleInfoCachedValues.h */,
+				40064EC81F0E2EF1009CA159 /* LSBundleProxy.h */,
+				40064EC91F0E2EF1009CA159 /* LSBundleRecordUpdater.h */,
+				40064ECA1F0E2EF1009CA159 /* LSDatabaseBuilder.h */,
+				40064ECB1F0E2EF1009CA159 /* LSDocumentProxy.h */,
+				40064ECC1F0E2EF1009CA159 /* LSIconCacheServiceProtocol-Protocol.h */,
+				40064ECD1F0E2EF1009CA159 /* LSInstallationServiceCallbackProtocol-Protocol.h */,
+				40064ECE1F0E2EF1009CA159 /* LSInstallationServiceProtocol-Protocol.h */,
+				40064ECF1F0E2EF1009CA159 /* LSInstallProgressDelegate.h */,
+				40064ED01F0E2EF1009CA159 /* LSInstallProgressList.h */,
+				40064ED11F0E2EF1009CA159 /* LSInstallProgressProtocol-Protocol.h */,
+				40064ED21F0E2EF1009CA159 /* LSInternalWorkspaceObserverProtocol-Protocol.h */,
+				40064ED31F0E2EF1009CA159 /* LSObserverTimer.h */,
+				40064ED41F0E2EF1009CA159 /* LSOpenResourceOperationDelegate-Protocol.h */,
+				40064ED51F0E2EF1009CA159 /* LSPingResults.h */,
+				40064ED61F0E2EF1009CA159 /* LSPlugInKitProxy.h */,
+				40064ED71F0E2EF1009CA159 /* LSPlugInQuery.h */,
+				40064ED81F0E2EF1009CA159 /* LSPlugInQueryWithIdentifier.h */,
+				40064ED91F0E2EF1009CA159 /* LSPlugInQueryWithQueryDictionary.h */,
+				40064EDA1F0E2EF1009CA159 /* LSPlugInQueryWithURL.h */,
+				40064EDB1F0E2EF1009CA159 /* LSRegistrationInfo.h */,
+				40064EDC1F0E2EF1009CA159 /* LSResourceProxy.h */,
+				40064EDD1F0E2EF1009CA159 /* LSResumableActivitiesAdministrativeProtocol-Protocol.h */,
+				40064EDE1F0E2EF1009CA159 /* LSResumableActivitiesControlManager.h */,
+				40064EDF1F0E2EF1009CA159 /* LSUserActivity.h */,
+				40064EE01F0E2EF1009CA159 /* LSUserActivityClientProtocol-Protocol.h */,
+				40064EE11F0E2EF1009CA159 /* LSUserActivityClientResponseProtocol-Protocol.h */,
+				40064EE21F0E2EF1009CA159 /* LSUserActivityDebuggingManager.h */,
+				40064EE31F0E2EF1009CA159 /* LSUserActivityInfo.h */,
+				40064EE41F0E2EF1009CA159 /* LSUserActivityManager.h */,
+				40064EE51F0E2EF1009CA159 /* LSVPNPluginProxy.h */,
+				40064EE61F0E2EF1009CA159 /* NSArray-LSObserverAdditions.h */,
+				40064EE71F0E2EF1009CA159 /* NSCoder-LaunchServicesAdditions.h */,
+				40064EE81F0E2EF1009CA159 /* NSCoding-Protocol.h */,
+				40064EE91F0E2EF1009CA159 /* NSCopying-Protocol.h */,
+				40064EEA1F0E2EF1009CA159 /* NSDictionary-LSBundleRecordUpatorAdditions.h */,
+				40064EEB1F0E2EF1009CA159 /* NSDictionary-LSCachedValuesAdditions.h */,
+				40064EEC1F0E2EF1009CA159 /* NSDictionary-LSNormalizePluginDictionary.h */,
+				40064EED1F0E2EF1009CA159 /* NSDictionary-LSPluginQueryAdditions.h */,
+				40064EEE1F0E2EF1009CA159 /* NSDictionary-LSPluginSDKResolutionAdditions.h */,
+				40064EEF1F0E2EF1009CA159 /* NSMutableCopying-Protocol.h */,
+				40064EF01F0E2EF1009CA159 /* NSObject-Protocol.h */,
+				40064EF11F0E2EF1009CA159 /* NSProgress-LSInstallProgressAdditions.h */,
+				40064EF21F0E2EF1009CA159 /* NSSecureCoding-Protocol.h */,
+				40064EF31F0E2EF1009CA159 /* NSString-LSPluginQueryAdditions.h */,
+				40064EF41F0E2EF1009CA159 /* NSURL-LSAdditions.h */,
+				40064EF51F0E2EF1009CA159 /* NSURL-LSPreferredLocalizations.h */,
+				40064EF61F0E2EF1009CA159 /* NSUUID-LaunchServicesAdditions.h */,
+				40064EF71F0E2EF1009CA159 /* NSXPCConnection-LSXPCServiceAdditions.h */,
+				40064EF81F0E2EF1009CA159 /* NSXPCConnectionDelegate-Protocol.h */,
+				40064EF91F0E2EF1009CA159 /* NSXPCInterface-IconCache.h */,
+				40064EFA1F0E2EF1009CA159 /* NSXPCListenerDelegate-Protocol.h */,
+				40064EFB1F0E2EF1009CA159 /* ODRLaunchServicesProtocol-Protocol.h */,
+				40064EFC1F0E2EF1009CA159 /* SFCompanionAdvertiserDelegate-Protocol.h */,
+				40064EFD1F0E30F5009CA159 /* Fix.h */,
+			);
+			path = MobileCoreServices;
+			sourceTree = "<group>";
+		};
+		40064EFE1F0E360F009CA159 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40064EFF1F0E360F009CA159 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40064E551F0E2E9E009CA159 /* TestMobileCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40064E6D1F0E2E9E009CA159 /* Build configuration list for PBXNativeTarget "TestMobileCore" */;
+			buildPhases = (
+				40064E521F0E2E9E009CA159 /* Sources */,
+				40064E531F0E2E9E009CA159 /* Frameworks */,
+				40064E541F0E2E9E009CA159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMobileCore;
+			productName = TestMobileCore;
+			productReference = 40064E561F0E2E9E009CA159 /* TestMobileCore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40064E4E1F0E2E9E009CA159 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = tencent;
+				TargetAttributes = {
+					40064E551F0E2E9E009CA159 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 40064E511F0E2E9E009CA159 /* Build configuration list for PBXProject "TestMobileCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40064E4D1F0E2E9E009CA159;
+			productRefGroup = 40064E571F0E2E9E009CA159 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40064E551F0E2E9E009CA159 /* TestMobileCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40064E541F0E2E9E009CA159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40064E691F0E2E9E009CA159 /* LaunchScreen.storyboard in Resources */,
+				40064E661F0E2E9E009CA159 /* Assets.xcassets in Resources */,
+				40064E641F0E2E9E009CA159 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40064E521F0E2E9E009CA159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40064E611F0E2E9E009CA159 /* ViewController.m in Sources */,
+				40064E5E1F0E2E9E009CA159 /* AppDelegate.m in Sources */,
+				40064E5B1F0E2E9E009CA159 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		40064E621F0E2E9E009CA159 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40064E631F0E2E9E009CA159 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40064E671F0E2E9E009CA159 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40064E681F0E2E9E009CA159 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40064E6B1F0E2E9E009CA159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40064E6C1F0E2E9E009CA159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40064E6E1F0E2E9E009CA159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = TestMobileCore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueshadow.TestMobileCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		40064E6F1F0E2E9E009CA159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = TestMobileCore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueshadow.TestMobileCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40064E511F0E2E9E009CA159 /* Build configuration list for PBXProject "TestMobileCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40064E6B1F0E2E9E009CA159 /* Debug */,
+				40064E6C1F0E2E9E009CA159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40064E6D1F0E2E9E009CA159 /* Build configuration list for PBXNativeTarget "TestMobileCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40064E6E1F0E2E9E009CA159 /* Debug */,
+				40064E6F1F0E2E9E009CA159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40064E4E1F0E2E9E009CA159 /* Project object */;
+}
